@@ -216,6 +216,143 @@ you have lambda's : anonymous functions
 
 
 
+https://github.com/nileshdevdas/ng4.git
+
+
+export class ClassName {
+	constructor(private a : number) {
+		this.a ; 
+	}
+
+	test():string {
+		return "xxxx"
+	}
+} 
+
+export interface  IInterfaceName {
+	test(); 
+}
+
+export class TestClass implent IInterfaceName {
+	// i must implement all the methods 
+}
+
+class can extends a class 
+
+
+class A {
+	
+}
+
+class B extends A {
+	constructor(){
+		super()
+	}
+
+
+}
+
+
+We do import and export 
+
+import  {ClassName}  from  './filename'
+import    from './' ; if there is not class name 
+
+Further to this we have to discuss  
+tsc  is compile i compile the file with tsc where the output is 
+.js 
+
+we could create modules/packages /folders 
+where we can keep our files 
+these are just segregation of your files to keep them 
+in organized manner 
+
+what is package.json // dependencies 
+
+npm init -y 
+
+
+with 2 things (tools , libararies)
+
+tools are generally global install 
+
+npm i -g typescript ---> 
+
+npm -i  bootstrap (local install )
+
+node_modules --> 
+
+
+
+
+That all the applicationd desing in angular is typscript :- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
