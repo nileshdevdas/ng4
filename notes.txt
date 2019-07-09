@@ -1,0 +1,347 @@
+STEP1  : https://labs.vinsys.com
+------------------------
+angular02/angular4us#2
+angular10/angular4us#10
+angular20/angular4us#20
+
+ctrl+alt+shift --> OPEN THE WINDOW --> 
+
+WIN # buttn does work inside the browser 
+
+cmd prompt :- 
+
+npm -v 
+
+Step1 : create a folder myapp1 
+mkdir myapp1 
+
+cd myapp1 
+
+c:\myapp1> npm init -y 
+
+type package.json 
+
+
+
+
+
+
+All typscript files end with .ts 
+A typescript file is not a mandatory file that should 
+contain a class
+
+But typscript can contain classes , interfaces , abstract, classes, constrcutors, methods 
+
+imports other clases 
+export my classes for others to use 
+
+How to declare a class in type script 
+class <ClasName> {
+	
+}
+
+what are the members of a class 
+
+class Hello {
+	i:number = 10; 
+	constructor(){
+	}
+	private add(a:number , b:number , c=10):number {
+
+	}
+}
+
+interface IHello {
+	addThis();
+}
+
+abstract class SomeHello implements IHello {
+}
+-----------------------------------------------------------
+Customer.ts 
+
+If you create a new File Departement.ts 
+and expect to use Customer in the Department then its 
+your responsibility to first export the Customer either 
+export class Customer {}
+export default class Customer{} // deafult can be only one 
+
+the other side which want to use the class will use :- 
+import {Customer}  from './filnamewhichcontainsCustomer'
+
+
+
+.ts extension file 
+the file must necessarily not be class name 
+one .ts file can have many class and interface and scripts 
+a typescript can have clases 
+a class a constructor() // single 
+a class can have methods / functions 
+a class can have variables 
+a class can have access modifiers 
+a class can be invoked  new ClassName()
+a class to be exported if its to be used in another file 
+a interface also also need to exported 
+a interdace i a contract and has only abstract methds 
+a class can extend other clases but it has call super 
+	for the constructor 
+a class can inherit parent class methods 
+a class can implement interface but has to implement all the 
+	abstract method or call itself abstract 
+tyep scripts support passing paramter to method 
+type script type number, string, any , boolean  : 
+type script is a syntactical check and is case sensitive 
+type script allows you to define packages (folders )
+all imports in typescripts a referring to a file 
+when imports are done .ts extesnsion is not to be provided 
+tsc is compiler that compiles type script to js
+ALl relative file and classes containrin those files are compiled when you compile one of the ts files 
+Typescript is object oriented you need to undestadn the 
+finally it generates the javascript 
+
+import
+export 
+inherit 
+class 
+constructor 
+super 
+this 
+tsc 
+
+
+
+
+
+everything is class or interface 
+evertything has to exported if it needs to imported 
+a class can have a cosntructor but only one 
+a class implements a interface then it must implement the interface method or declare it self as abstract 
+a instance of class  new ClassName(); 
+the typscript allows you to export as well as import 
+you export classes adn you import classes from files 
+you have lambda's : anonymous functions 
+
+
+|==== models 
+		 |---- User (*)
+		 class User {
+			constructor(private username:string, private password:string, private group:string){}
+	     ) 
+		 }
+		 }
+		 |---- Group (1)
+		 class Group{
+		 		groupname
+		 		users = [] ;
+		 		constructor(groupname){
+		 				this.groupname =groupname;
+		 		}
+		 }
+|-----dao
+	    |------ export interface IDAO{
+	    		  save(obj)
+	    		  update(obj); 
+	    		  delete(obj); 
+	    		  find(obj); 
+	    		  findAll(obj); 
+	    
+	    }
+ 	    		export class UserDAO  implements IDAO{
+  					save(obj){
+
+  					}
+	    		  update(obj){
+
+	    		  } 
+	    		  delete(obj){
+
+	    		  } 
+	    		  find(obj){
+
+	    		  } 
+	    		  findAll(obj){
+
+	    		  } 
+	    
+ 	    		} 
+	    		export class GroupDAO Implements IDAO{
+
+	    		  save(obj){
+	    		  	
+	    		  }
+	    		  update(obj){
+
+	    		  } 
+	    		  delete(obj){
+
+	    		  } 
+	    		  find(obj){
+
+	    		  } 
+	    		  findAll(obj){
+
+	    		  } 
+	    		} 
+|---- services 
+	import {User} from '../models/User';
+
+		|---- export class UserManagement{
+					createUser(user:User){};
+					createGroup(group: Group){}; 
+					getUsers():User[]{}; 
+					getGroups(): Group[]{}; 
+					getUsersForGroup():User[]{}; 
+		} 
+		
+|---- main.ts --> Script // no class  
+
+		va uam = new UserManagement(); 
+		uam.createUser(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
