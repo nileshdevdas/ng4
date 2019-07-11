@@ -286,6 +286,172 @@ node_modules -->
 
 
 That all the applicationd desing in angular is typscript :- 
+-----------------------------------------------------------------
+The angular requires a tool: 
+the tool is know angular/cli 
+
+npm install -g @angular/cli@6.2.4
+
+ng -v 
+
+
+How to create  a new angular project 
+
+ng  new imdb
+
+
+
+
+
+
+
+in my mainlayout i will need to add a array
+
+movies = [
+	{name : '', year : '' , genre : '' , banner : ''}, 
+	{name : '', year : '' , genre : '' , banner : ''}, 
+	{name : '', year : '' , genre : '' , banner : ''}, 
+	{name : '', year : '' , genre : '' , banner : ''}
+]
+
+<table class="table table-striped table-bordered">
+	<tr *ngFor="let movie of movies">
+		<td>{{movie.name}}</td>
+	</tr>
+</table>
+
+
+
+To Access  http Service : 
+
+1. Add HttpClientModule in your app.module.ts 
+
+	imports : [ HttpClientModule]
+
+
+2. Decide now where you wish to use the service --> 
+	you MainLayout
+		constructor(private http:HttpClient){}
+
+		ngInit(){
+			http.get('url').subscribe((result)=>{
+				// logic
+			})
+		}
+
+
+Step app.module.ts 
+
+import {HttpClientModule} from '@angular/common/http'; 
+
+
+imports : [
+	BrowserModule, 
+	HttpClientModule
+]
+
+
+Open you mainlayout.component.ts 
+
+export class MainLayoutComponent implment OnNgInit {
+	
+	constructor(private http:HttpClientModule){}
+
+}
+
+
+What is a component 
+component is typescript Class 
+What makes a component a componet 
+
+@Component ({
+	selector : '', 
+	templateUrl : '', 
+	styleUrls : []
+})
+export class  MyComponent  implements NgOnInit
+{
+	var// in  the component ---> whenever the state 
+	changes if the state is bound to the // html 
+	that changes the rendering also 
+	
+	constructor(http:HttpClient){
+
+	}
+	ngInit(){
+	// element -->  
+		// give you the gurantee tha the component has intiialzed
+	}
+
+	methods(){
+
+	}
+}
+
+
+these components 
+
+movielist 
+moviedetail 
+tvseries 
+seriesratings 
+event 
+eventbooking 
+
+A service is TypeScript Class 
+
+export class MyService {
+	
+}
+What makes a service a service and not a component
+A service is a service 
+@Injectible({
+	providedIn : 'root'
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
