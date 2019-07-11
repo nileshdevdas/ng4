@@ -408,6 +408,207 @@ A service is a service
 @Injectible({
 	providedIn : 'root'
 })
+before angular6 there was only tag Injectible and never has 
+providedIN you had register each service in the 
+in the provides section of your module 
+
+angular services are self provisioned means @Injectible ({
+	providedIn : 'root'
+})
+this will automatically register as service and you dont need to provide this in the app.module.ts --> imports secton 
+
+
+How to create  service :- 
+i would need 
+
+ng  g  c =-=> create a componet 
+ng  g  s =-=> creates a service 
+
+a Service is a singleton 
+in all the components use the service --< 
+they will get the same value if there is a state in the 
+service 
+Service are used to share data or common logic across the components 
+
+A service is injetible 
+Services can be injected in any component in the constructor 
+similar to what we injected as http 
+
+@Injectible({
+	providedIn : 'root'
+})
+export class MovieService {
+	constructor(){
+
+	}
+
+
+
+
+}
+
+
+
+ng  g  c  create component 
+ng  g  s  create service 
+
+a service is typescript 
+a service auto register itself as provider because 
+this anuglar 6 
+a service is a service because 
+
+@Injectible({
+	providedIn : 'root'
+})
+
+A service is singleton 
+A service can be injected in any number of components 
+but it will instantantiate only once 
+
+A service further can inject other service 
+
+A service is used to share data across components 
+a service is used to share common logic across components 
+
+a service is you main flow. storage or logic set 
+service can only be injected in a constructor : 
+angular support only constructor injectors 
+
+
+
+
+
+
+ng g s  movielist 
+
+Subject ===> Never publsihes unlessh some calls next 
+BehaviourSubject ===> always publish the default as soon its initialiazed 
+ReplaySubject -->  
+AsyncSubject
+
+
+
+
+const routes = [
+	{path : '', component : HomePageComponent}, 
+	{path : 'movies' , component : MoviesPageComponent}, 
+	{path : 'tv' , component : TelevisionPageComponent}, 
+	{path : 'events' ,component : EventsPageComponent}, 
+	{path : '**'  , component : OopsPageComponent}
+ 
+]
+
+imports : [
+BrowserModule,
+HttpClientModule, 
+RouterModule.forRoot(routes)
+]
+
+
+
+you open a browser : 
+is session storage having a variable called michea 
+no it does have because every new browser get new sessionStorage 
+
+you type http://localhost:4200 
+
+Now ngIf check if you have loggedin // no 
+but there has to be 2 types checks :- 
+a) when init -->  // if you referesh on page you never closed the browser so why do you want the user to login agin 
+the init always get called // here you will check that is user logged in 
+
+b) when login happens 
+
+Directive  can used 
+
+ELement 
+Attribute 
+Class 
+
+EAC -> 
+A reusable logic 
+
+<div highlight>
+
+A directive is code that can apply a common behaviour to 
+a element in the page / component anywhere and is not tied to any component or not tied to any  service or any module it is freely usable where ever you wish to apply on given elements 
+
+<div calendar>
+
+ng  g  d  
+--------- 
+it generates  directive 
+a directive is a class 
+@Directive 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
